@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deletar Tarefa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Deletar Tarefa</h1>
+        <p>deseja deletar o item"{{ item.name }}"?</p>
+        <form method="post">
+            <button type="submit" class="btn btn-danger">Deletar</button>
+            <a class="btn btn-secondary" href="{{ url_for('index') }}">Cancelar</a>
+        </form>
+    </div>
+</body>
+</html>
